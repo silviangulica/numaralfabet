@@ -115,9 +115,23 @@ void alg(int numar, int alegere){
             if (numar / 100 == 6) cout << convert(numar / 100, false) << "sute";
             else cout << convert(numar / 100, true) << ((numar / 100 == 1)? "suta" : "sute");
             //---
-            if (numar % 100 < 19) alg(numar%100, 1);
-            else alg(numar%100, 2);
+            if (numar % 100 != 0) {
+                if (numar % 100 < 19) alg(numar%100, 1);
+                else alg(numar%100, 2);
+            }
         break;
+
+        case 4:
+            if (numar / 1000 == 6) cout << convert(numar / 1000, false) << "mii";
+            else cout << convert(numar / 1000, true) << ((numar / 1000 == 1)? "mie" : "mii");
+            //-- sute
+            if (numar % 1000 != 0) {
+                if (numar % 1000 < 19) alg(numar%1000, 1);
+                else if (numar % 1000 <= 99) alg(numar%1000, 2);
+                else alg(numar % 1000, 3);
+            }
+        break;
+
 
     }
 
