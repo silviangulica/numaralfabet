@@ -1,7 +1,7 @@
 /*
     Creator: 3pletii 
     Versiuni:
-        0.24 -> Adaugat Github
+        0.24 -> Adaugat Github, yey!
         0.23 -> Optimizari vizuale la cod si la menu
 	    0.22 -> Bug, doua nu doi pt 572
         0.21 -> Modificari pentru "200", gen douasunte
