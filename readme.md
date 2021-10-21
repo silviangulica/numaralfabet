@@ -1,8 +1,10 @@
 # Proiect: Convertirea numerelor in cuvinte
-# Versiunea: 0.3
+# Versiunea: 0.4
 
     -Changelog-
 
+    0.4 -> Introducere in numere [10 000 ... 99 999]
+    /---
     0.3 -> Introducere in numere [1 000 ... 9 999]
     /---
     0.24 -> Integrare Github, yey!

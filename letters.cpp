@@ -103,7 +103,7 @@ void alg(int numar, int alegere){
     switch (alegere)
     {
         case 1:
-            cout << convert(numar, false) << endl;
+            cout << convert(numar, false);
         break;
 
         case 2:
@@ -130,8 +130,20 @@ void alg(int numar, int alegere){
                 else if (numar % 1000 <= 99) alg(numar%1000, 2);
                 else alg(numar % 1000, 3);
             }
+
         break;
 
+        case 5:
+            if (numar / 1000 <= 19) {alg(numar/1000, 1); cout << "mii";}
+            else {alg(numar/1000, 2); cout << "demii";}
+            //sute
+            if (numar % 1000 != 0){
+                if (numar % 1000 < 19) alg(numar%1000, 1);
+                else if (numar % 1000 <= 99) alg(numar%1000, 2);
+                else alg(numar % 1000, 3);
+            }
+
+        break;
 
     }
 
